@@ -4,49 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="/css/style.css">
     <link href="/sources/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
-
 <div id="container">
 
-                <div id="api_zone">
-                    <input type="text" placeholder="Entrer une ville" required>
-                    <button type="submit">chercher</button>
-                </div>
-
-
-
-            <div id="api">
-                <div id="api_weather">
-
-                </div>
-                <div id="api_temperature">
-
-                </div>
+    <div id="api-box">
+        <form  id="api" onsubmit="event.preventDefault(),data();">
+            <input type="text" placeholder="Entrer une Ville,Pays" required id="zone">
+            <input type="date" placeholder="Entrer la date" required id="time">
+            <!-- <button type="submit"> chercher </button> -->
+        </form>
+        
+        <div id="api_temperature">
+            
+        </div>
+        
+        <!-- <div id="api_info">
+            <div id="Humidity">
+                
             </div>
-            <div id="api_infos">
-                <div id="Humidity">
-
-                </div>
-                <div id="Precipitation">
-
-                </div>
-                <div id="Pressure">
-
-                </div>
-                <div id="wind">
-
-                </div>
+            <div id="Precipitation">
+                
             </div>
-
+            <div id="Pressure">
+                
+            </div>
+            <div id="wind">
+                
+            </div>
+        </div> -->
+        
+    </div>
 </div>
-
-
-    <script src="/sources/bootstrap.bundle.min.js"></script>
-    <script src="/js/index.js"></script>
+<!-- <script src="../sources/bootstrap.bundle.min.js"></script> -->
+<script src="/js/index.js"></script>
 </body>
 </html>
