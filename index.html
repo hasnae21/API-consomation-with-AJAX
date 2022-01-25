@@ -6,40 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link href="/sources/bootstrap.min.css">
-    <title>Document</title>
+    <link rel="icon" href="/images/téléchargement.jpg">
+    <title>Weather App</title>
 </head>
 <body>
 <div id="container">
-
-    <div id="api-box">
-        <form  id="api" onsubmit="event.preventDefault(),data();">
-            <input type="text" placeholder="Entrer une Ville,Pays" required id="zone">
-            <input type="date" placeholder="Entrer la date" required id="time">
+        <div id="api-box">
+            <div id="api"  >   
+            <form onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Entrer une Ville,Pays" required id="zone">
+            </form>
+            </div>
             <!-- <button type="submit"> chercher </button> -->
-        </form>
-        
-        <div id="api_temperature">
-            
+            <div id="api_temperature">
+                <div id="weather-icon">
+                    <img id="icon"/>
+                   <p id="weather">
+                   </p>
+                </div>
+                <h3 id="temperature">
+                </h3>
+            </div>
         </div>
-        
-        <!-- <div id="api_info">
-            <div id="Humidity">
-                
+
+        <div id="api_info">
+            <div id="Humidity" class="flex">
+                    <div class="cercle">
+                        <h4 id="text1">
+                        </h4>
+                    </div>
+                <p> Humidité </p>
             </div>
-            <div id="Precipitation">
-                
+
+            <div id="Precipitation" class="flex" >
+                    <div class="cercle">
+                        <h4 id="text2"> 
+                        </h4>
+                    </div>
+                <p> Précipitation</p>
             </div>
-            <div id="Pressure">
-                
+
+            <div id="Pressure"  class="flex"  >
+                    <div class="cercle">
+                        <h4 id="text3">
+                        </h4>
+                    </div>
+                <p> Pression</p>
             </div>
-            <div id="wind">
-                
+
+            <div id="wind"   class="flex" >
+                    <div class="cercle">
+                        <h4 id="text4">
+                        </h4>
+                    </div>
+                <p > vent </p>
             </div>
-        </div> -->
-        
-    </div>
+        </div>
 </div>
-<!-- <script src="../sources/bootstrap.bundle.min.js"></script> -->
 <script src="/js/index.js"></script>
+<!--<script src="/sources/bootstrap.bundle.min.js"></script>-->
 </body>
 </html>

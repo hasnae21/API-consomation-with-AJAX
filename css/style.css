@@ -1,48 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
-    background-image: url("../images/depositphotos_64451823_xl-2015.jpg"); /* The image used */
+    background-image: url("/images/hadi.jpg"); /* The image used */
     background-color: #4A8DD4; /* Used if the image is unavailable */
     background-repeat: no-repeat; 
     background-size: cover;
+    font-size: 25px;
+    font-weight:bolder;
 }
 #api-box{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-    float: left;
+    margin-top: 30px;
+}
+#api_temperature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 120px;
+    background-color:transparent;
+    border-radius: 10px;
+    margin-top: 160px;
+   background-color: #16394C;
+   color: white;
+}
+#api_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 170px;
+    color: white
 }
 #api{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
+}
+::placeholder{
+    color: #4A8DD4;
 }
 #zone{
-    width: 550PX;
-    height: 40px;
+    width: 450PX;
+    height: 50px;
+    font-size: 25px;
+    font-weight:bold;
     color: white;
     background-color: #061D50;
     border:1px solid #061D50;
-    margin: 30px;
     margin-bottom: 0px;
     border-radius: 10px;
     padding-left: 20px;
 }
-#time{
-    width: 450PX;
-    height: 40px;
-    background-color: white;
-    margin-top: 10px;
-    border-radius: 5px;
-    border:1px solid white;
-    padding:0px 20px;
+
+#weather-icon{
+    display: flex;
+    flex-direction: column;
 }
-#api_temperature{
-    margin-top: 100px;
-    width: 300px;
-    height: 200px;
-    border: solid 2px white;
-    background-color:transparent;
-    border-radius: 10px;
+.cercle{
+    width: 120px;
+    height: 120px;
+    background-color: #4A8DD4;
+    border-radius: 50%;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h4{
+    padding-top: 40px;
 }
