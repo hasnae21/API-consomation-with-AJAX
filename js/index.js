@@ -21,7 +21,7 @@ async function current(){
     console.log(data);
 
     icon.src= data.current.weather_icons;
-    weather.textContent= data.current.weather;
+    weather.textContent= data.current.weather_descriptions;
     temperature.textContent= data.current.temperature;
     text1.textContent= data.current.humidity;
     text2.textContent= data.current.precip;
